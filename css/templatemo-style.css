@@ -413,6 +413,11 @@ ul.tm-list-plus li:before {
   margin: 11%;
 }
 
+.tm-gallery-item-lg {
+  width: 95%;
+  margin: 0%;
+}
+
 .tm-gallery-item-sm {
   width: 30%;
   margin-left: 11%;
