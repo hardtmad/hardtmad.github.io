@@ -77,7 +77,19 @@
               <li>
                 <a href="#tab2" class="">
                   <div class="tm-tab-icon"></div>
+                  Basic Tweeting Bot
+                </a>
+              </li>
+              <li>
+                <a href="#tab3" class="">
+                  <div class="tm-tab-icon"></div>
                   Project Gadfly
+                </a>
+              </li>
+              <li>
+                <a href="#tab4" class="">
+                  <div class="tm-tab-icon"></div>
+                  Food Sufficiency Map
                 </a>
               </li>
             </ul>
@@ -117,9 +129,26 @@
               </div>
               <div id="tab2">
                 <div class="text-content">
+                  <h3 class="tm-text-secondary tm-mb-5">
+                    Basic Tweeting Bot
+                  </h3>
+                  <p class="tm-mb-5">
+                    A simple <a href="https://github.com/hardtmad/sweepstakes"
+                    target="_blank" rel="noopener noreferrer">Twitter bot</a>
+                    which tweets a local politics statistic to the
+                    <a href="https://twitter.com/hancockclock"
+                    target="_blank" rel="noopener noreferrer">Timeline</a> once
+                    per day. The bot authenticates and posts using
+                    <a href="https://docs.tweepy.org/en/latest/" target="_blank"
+                    el="noopener noreferrer">Tweepy</a>.
+                  </p>
+                </div>
+              </div>
+              <div id="tab3">
+                <div class="text-content">
                   <h3 class="tm-text-secondary tm-mb-5">Project Gadfly</h3>
                   <p class="tm-mb-5">
-                    <a href = "http://www.thesandb.com/features/computer-science-students-create-project-gadfly.html"
+                    <a href="http://www.thesandb.com/features/computer-science-students-create-project-gadfly.html"
                     target="_blank" rel="noopener noreferrer">Project Gadfly</a>
                     sought to make it easier for Americans to contact their
                     elected representatives. Conceived by a Grinnell College alum
@@ -163,6 +192,59 @@
                           class="img-fluid"
                         />
                       </figure>
+                    </div>
+                  </p>
+                </div>
+              </div>
+              <div id="tab4">
+                <div class="text-content">
+                  <h3 class="tm-text-secondary tm-mb-5">Food Sufficiency Map</h3>
+                  <p class="tm-mb-5">
+                    Using Food and Agriculture Organization (<a href="http://www.fao.org/"
+                    target="_blank" rel="noopener noreferrer">FAO<a>) balance sheets
+                    with annual production and consumption quantities by food
+                    group by country, we calculate a <i>food self-sufficiency</i>
+                    ratio. We interpolate the ratio as a color gradiant on the
+                    world map. The year can be selected using the drop down menu
+                    in the upper left corner. Clicking on a country show its
+                    sufficiency ratio and top 10 production categories.
+                  </p>
+                  <p class="tm-mb-5">
+                    This map is rendered using <a href="https://d3js.org/" target="_blank"
+                    rel="noopener noreferrer">D3.js</a>. The gradient is created
+                    using color interpolation, mapping the sufficiency ratio to the
+                    <a href="https://en.wikipedia.org/wiki/CIELAB_color_space"
+                    target="_blank" rel="noopener noreferrer">CIELAB color space</a>.
+                    This means that countries with similar sufficiency scores have
+                    similar colors.
+                  </p>
+                  <div class="tm-gallery-item-lg">
+                    <figure class="effect-bubba">
+                      <img
+                        src="img/foodbalance.png"
+                        alt="Heat map showing world food self-sufficiency ratios
+                        by country by year."
+                        class="img-fluid"
+                      />
+                    </figure>
+                  </div>
+                  <div class="tm-gallery-item-lg">
+                    <figure class="effect-bubba">
+                      <img
+                        src="img/foodbalance_AR.png"
+                        alt="Heat map showing world food self-sufficiency ratios,
+                        highlighting Argentina and its top food groups."
+                        class="img-fluid"
+                      />
+                    </figure>
+                  </div>
+                  <p class="tm-mb-5">
+                    <div style="width: 100%; margin: 0 auto; display: inline-block">
+                    <br>
+                    <i>Created in collaboration with classmates for <a
+                    href="https://curtsinger.cs.grinnell.edu/teaching/2017S/CSC395/"
+                    target="_blank" rel="noopener noreferrer">Data Visualization</a>
+                    in the spring of 2017.</i>
                     </div>
                   </p>
                 </div>
