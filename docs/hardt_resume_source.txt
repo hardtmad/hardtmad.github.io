@@ -1,0 +1,279 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{enumitem} %for lists without bullet points
+\usepackage{fontawesome} %for logos
+\def\faphonesq{{\FA \symbol{"F098}}}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LATEX SYMBOL
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{flushright}
+\color{date}\fontspec[Path = fonts/raleway/]{Raleway-ExtraLight}\fontsize{8pt}{10pt}\selectfont 
+Generated with \LaTeX
+\end{flushright}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{Madeleine}{Hardt}{ 
+\faEnvelope \hspace{0.1em} \href{mailto:hardtmad@gmail.com}{hardtmad@gmail.com} 
+| \faphonesq \href{tel:8454901446}{ 845.490.1446} \\
+\faHome \urlstyle{same}\href{https://hardtmad.github.io}{ hardtmad.github.io} | \faGithub \urlstyle{same}\href{https://github.com/hardtmad}{ hardtmad} | \faLinkedin \urlstyle{same}\href{https://www.linkedin.com/in/madeleine-hardt}{ madeleine-hardt}
+} 
+
+\fboxsep=0pt
+\noindent{%
+\begin{minipage}[t]{0.71\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.4em}
+\section{Education}
+
+%\runsubsection{Aquincum Institute of Technology}
+%\descript{| Budapest, Hungary }
+%\location{Postgraduate Semester Abroad | Fall 2017}
+%\vspace{\topsep}
+
+\runsubsection{Aquincum Institute of Technology}
+\descript{| Budapest, Hungary }
+\location{Post-B.A. Semester Abroad | Fall 2017}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\runsubsection{Grinnell College}
+\descript{| Grinnell, IA }
+\location{B.A. – Computer Science \emph{with honors} | May 2017}
+Cum. GPA: 3.56 \textbullet{} Major GPA: 3.61
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+
+\runsubsection{Horace Greeley High School}
+\descript{| Chappaqua, NY }
+\location{ Diploma | May 2012 }
+National Merit Scholar
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SELECTED EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.1em}
+\section{Selected Experience}
+
+\runsubsection{Robert Half} \descript{assigned at Comcast}
+\descript{Developer II | Sep 2019 - present}
+Primarily working in messaging (email, SMS, MMS) and Anti-Abuse \\
+Developing and maintaining various apps as needed (Python, PHP, Bash, Java, etc.) \\
+Able to quickly pick up projects \& communicate with internal \& ext. stakeholders
+\sectionsep
+
+\runsubsection{Sawatch Labs} \\
+\descript{Transportation and Mobility Data Analyst | Jan 2019 - May 2019}
+Developed \& visualized data-driven insights for electric \& traditional vehicle use \\
+Presented findings visually and in written reports for non-technical audiences \\
+Full-stack software dev., including DB, RESTful API, and simple UX implementation
+\sectionsep
+
+\runsubsection{Morelity} \\
+\descript{Software Development Intern | June 2017 - August 2017}
+Developed and refined client-facing app as software dev. team member \\
+Emphasized testing MeteorJS framework with Sinon.js, Mocha, and Chai.js \\
+Trained in basic DevOps and Data Science methodologies
+\sectionsep
+
+\runsubsection{FORVM: Project Gadfly} \\
+\descript{Project Manager \& iOS Developer | March 2017 – September 2017} 
+%\location{}
+Led a team project to lower the barrier for Americans to call elected officials\\
+Created two apps, a web client, a server, a database, and nonprofit company\\
+Developed iOS app to retrieve representatives, scan QR codes, \& display call scripts 
+\sectionsep
+
+\runsubsection{Grinnell College AppDev} \\
+\descript{iOS Developer | Jan 2017 – May 2017}
+%\location{Jan 2017 – present}
+Developed iOS front-end for mobile applications for campus and community use \\
+Trained in Objective-C; worked in Swift
+\sectionsep
+
+\runsubsection{Grinnell College C.S. Department} \\
+\descript{Class Mentor | Aug 2016 – Dec 2016; Jan 2017 – May 2017}
+%Aug 2016 – present}
+%\location{Aug 2016 – Dec 2016; Jan 2017 – present}
+Introductory course in C, focused on imperative problem solving \& data structures\\
+Operating systems course in C, focused on resource mgmt. \& parallel algorithms\\
+Reviewed concepts \& answered questions in class, mentor sessions, \& office hours
+\sectionsep
+
+\runsubsection{Digital Bridges for Humanistic Inquiry Grant \\ 
+\small{Funded by the Andrew W. Mellon Foundation}} \\
+%\runsubsection{Andrew W. Mellon Foundation} \\
+\descript{Research Fellow | May 2016 – September 2016}
+%\location{Summer 2016}
+Developed a user-friendly pipeline to make and query topic models of Twitter data to support research in the Social Sciences and Humanities \\
+%Used Gensim toolkit in Python, particularly ldamodel and word2vec
+\sectionsep
+
+%\runsubsection{Grinnell College Computer Science Department	}
+%\descript{| Individual Tutor }
+%\location{Jan 2016 – May 2016 | Grinnell, IA}
+%Provided support in evaluating learning style and studying techniques \\
+%Reviewed practice problems and difficult concepts
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LEADERSHIP EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \vspace{-0.5em}
+% \section{Leadership Experience}
+% \runsubsection{Grinnell College C.S. Department} \\
+% \descript{Team Project Manager | Aug 2016 – Dec 2016}
+% %\location{Aug 2016 – Dec 2016}
+% Led a team in course project following Agile development principles\\
+% Developed a simple grant application management system for a local nonprofit
+% \sectionsep
+
+%\runsubsection{Grinnell College French Department} \\
+%\descript{House Coordinator | Aug 2013 – May 2014}
+%\location{Aug 2013 – May 2014}
+%Managed budget and organized French-themed activities for the house and campus community \\
+%Mediated conflict and assisted residents with issues as needed
+%\sectionsep
+
+% \runsubsection{College and Young Democrats of Iowa} \\
+% \descript{Financial Director | Aug 2013 – Dec 2013}
+% %\location{Aug 2013 – Dec 2013}
+% Managed the budget of College and Young Democrats of Iowa \\
+% Coordinated with College Democrat groups across Iowa 
+% \sectionsep
+
+%\runsubsection{Grinnell College Campus Democrats}
+%\descript{| Co-Chair}
+%\location{Aug 2013 – May 2014 | Grinnell, IA}
+%Responsible for maintaining and expanding group \\
+%Responsible for organization and implementation of events to educate, shape, and further Democratic Party interests and elect Democratic candidates
+%\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS AND INTERESTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{minipage}}%
+\hfill{             }%
+{%
+\begin{minipage}[t]{0.28\textwidth}
+%\vspace{1em}
+\section{\hspace{1.3em} Skills}
+\vspace{-0.3em}
+\begin{itemize}[label={}]
+  \item \descript{Languages:} Python, PHP, JavaScript, HTML, CSS, Java, C, Ruby on Rails, Objective-C, Swift, Scheme, Prolog,
+  \item \descript{Relational and Non-relational Databases}
+  \item \descript{Testing and Automation}
+%   \item \descript{Elementary AWS Services}
+  %\item \descript{Conversational French}
+  \item \descript{Tools and methodologies:} Git, Agile practices, Pair programming,
+  Unix \& Bash
+ % \item \descript{Interested in:} App and Web Development, Natural Language Processing, Machine Learning, Social Action
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RELEVANT COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\qquad \qquad \section{\qquad Relevant}
+%\section{ \quad Coursework}
+%\section{\quad Coursework}
+\vspace{-1.8em}
+\qquad \section{\hspace{1.5em}Selected}
+\vspace{-1.8em}
+\qquad \section{\hspace{1.5em}Coursework}
+\begin{center}
+\vspace{0.2em}
+\begin{itemize}[label={}]
+  \item \descript{AI with Python}
+  \item \descript{Scalable Systems}
+  \item \descript{Networks}
+  \item \descript{Semantic~\&~Declarative~Technologies}
+%   \item \descript{Software~Development}
+  \item \descript{Data~Visualization} 
+  \item \descript{Analysis~of~Algorithms}
+  \item \descript{Computational~Complexity~\&~Automata}
+  \item \descript{Operating~Systems}
+  \item \descript{Object-Oriented Design}
+  \item \descript{Imperative Problem Solving \& Data Structures}
+  \item \descript{Functional~Problem~Solving}
+  \item \descript{Combinatorics \begin{small}(proof-based)\end{small}}
+  \item \descript{Linear Algebra \begin{small}(proof-based)\end{small}}
+\end{itemize}
+\end{center}
+\end{minipage}}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RELEVANT COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Relevant Coursework}
+
+%\begin{center}
+%\descript{Data Visualization \textbullet{}Software Development \textbullet{} Analysis of Algorithms \textbullet{} Computational Complexity \& Automata \textbullet{} Operating Systems \textbullet{} Object-Oriented Design \textbullet{} Imperative Problem Solving \& Data Structures \textbullet{} Functional Problem Solving \textbullet{} Combinatorics (proof-based)}
+%\end{center}
+
+\end{document}  \documentclass[]{article}
